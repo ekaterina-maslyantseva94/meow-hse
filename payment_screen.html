@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,600&display=swap" rel="stylesheet">
+    <style media="screen">
+      /* *{
+        box-sizing: border-box;
+      } */
+      body {
+        font-family: 'Open Sans', sans-serif;
+      }
+
+      .payment_screen {
+        width: 375px;
+        height: 818px;
+        background: #FB6DCA;
+      }
+      .payment_screen h3,h6{
+        width: 304px;
+        height: 17px;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 30px;
+        text-align: center;
+        color: #4F4F4F;
+        margin-top: 214px;
+        margin-left: 36px;
+      }
+      .card{
+        width: 359px;
+        height: 217px;
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 12px;
+        margin: 24px auto;
+      }
+      .card img{
+        width: 37px;
+        margin-left: 20px;
+        margin-right: 1px;
+        margin-top: 10px;
+      }
+      /* .card h1,h2,h4,h5 {
+        display: block;
+        width: 60px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 11px;
+        line-height: 12px;
+        color: #4F4F4F;
+        margin-bottom: 21px;
+        margin-left: 25px;
+        margin-right: auto;
+        margin-top: 10px;
+      } */
+      .card h1 {
+        display: inline-block;
+        vertical-align;
+        width: 20px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 11px;
+        line-height: 10px;
+        color: #4F4F4F;
+        margin-bottom: 13px;
+        margin-left: 20px;
+        margin-right: auto;
+        margin-top: 5px;
+      }
+      .card h2{
+        display: inline-block;
+        vertical-align;
+        width: 20px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 11px;
+        line-height: 10px;
+        color: #4F4F4F;
+        margin-bottom: 10px;
+        margin-left: 20px;
+        margin-right: 0;
+        margin-top: 10px;
+      }
+      .card h4 {
+        display: inline-block;
+        vertical-align;
+        width: 20px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 11px;
+        line-height: 10px;
+        color: #4F4F4F;
+        margin-bottom: 13px;
+        margin-left: 20px;
+        /* margin-right: 0; */
+        margin-top: 5px;
+      }
+      .card h5 {
+        display: inline-block;
+        vertical-align;
+        width: 20px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 11px;
+        line-height: 10px;
+        color: #4F4F4F;
+        margin-bottom: 13px;
+        margin-left: 20px;
+        margin-right: 0;
+        margin-top: 10px;
+      }
+      .sum h6{
+      margin-top: 32px;
+      }
+      .btn {
+        width: 281px;
+        height: 46px;
+        margin-left: 48px;
+        margin-top: 39px;
+        background: #C7DB43;
+        border-radius: 11px;
+        display: block;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 23px;
+        line-height: 44px;
+        text-align: center;
+        text-decoration: none;
+        color: #4F4F4F;
+      }
+
+
+      .card input {
+        display: inline-block;
+        vertical-align;
+        width: 60%;
+        line-height: 23px;
+        margin-left: 45px;
+        margin-top: 9px;
+        background: #FBFBFD;
+        border: none;
+      }
+
+      .cvc input{
+        display: inline-block;
+        vertical-align:middle;
+        width: 30%;
+        line-height: 23px;
+        margin-left: 20px;
+        margin-top: 9px;
+        background: #FBFBFD;
+        border: none;
+      }
+      .meow img{
+        width: 185px;
+        margin-left: 80px;
+        margin-right: 8px;
+        margin-top: 84px;
+
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="payment_screen">
+      <img
+      src="Status Bar.svg"
+      alt="Status Bar">
+      <h3>Платеж картой</h3>
+            <div class="card">
+        <img
+        src="image 30.svg"
+        alt="image 30">
+        <img
+        src="image 31.svg"
+        alt="image 31">
+        <img
+        src="image 32.svg"
+        alt="image 32">
+
+        <div>
+          <h1>Номер карты</h1>
+          <input type="text" name="" value="" placeholder="0000 0000 0000 0000" />
+        </div>
+        <div class="expire">
+          <div>
+            <h2>Срок действ.</h2>
+              <input class="inputCard" name="expiry" id="expiry" type="month" required/>
+          </div>
+          <div class="holder">
+
+          </div>
+          <h5>Держатель карты</h5>
+          <input type="text" name="" value="" placeholder="MASLYANTSEVA EKATERINA" />
+          <div class="CVC">
+            <div>
+              <h4>CVC</h4>
+              <input type="text" name="" value="" placeholder="" />
+            </div>
+          </div>
+        <div>
+        </div>
+        <div class="sum">
+          <h6>500</h6>
+        </div>
+        <a class="btn"href="#">Оплатить</a>
+        <div class="meow">
+          <img
+          src="Слой 5.svg"
+          alt="Слой 5">
+
+        </div>
+
+
+
+
+
+
+<!--
+        <h1>Номер карты</h1>
+        <input class="number"type="text" name="" value="">
+        <h2>Срок дейст.</h2>
+        <input class="inputCard" name="expiry" id="expiry" type="month" required/>
+        <h4>CVC</h4>
+        <input class="cvc"type="number" name="" value="">
+        <h5>Держатель карты</h5>
+        <input class="name"type="text" name="" value=""> -->
+
+
+      </div>
+
+    </div>
+  </body>
+</html>
